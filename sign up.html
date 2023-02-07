@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  background-image: url(Images/signu.jpg);
+
+  min-height: 100vh;
+  background-size: 220vh 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text] input[type=password]
+ {
+  background-color: grey;
+  outline:none;
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <h1>Sign Up</h1>
+
+    <label for="Full Name"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="Full Name" required>
+	
+	
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <a href="index.html">
+    <button type="submit" class="btn">Create Account</button><br><br></a>
+	
+	<font size="2" >Already have an account?    <a href="index.html">    Login in</a></font>
+  </form>
+</div>
+</body>
+</html>
